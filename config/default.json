@@ -1,0 +1,6 @@
+{
+    "port":4000,
+    "x-api-key":"DEMO-API-KEY",
+    "apiDomain":"https://api.thecatapi.com",
+    "apipath":"/v1/images/search"
+}

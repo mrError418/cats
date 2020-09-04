@@ -1,12 +1,12 @@
 const express = require('express');
+const config = require('config');
 const fs = require('fs');
 
 const app = express();
 
-app.use('/static', express.static('client'));
+const PORT = config.get('port')  || 4000;
 
-const PORT = 8000;
-
+app.use('/api/cat',require('./routes/cat.routes'));
 
 async function start() {
  
@@ -15,14 +15,5 @@ async function start() {
 
     
 }
-
-app.get('/', function(req, res) {
-    fs.readFile('./client/index.html', function (err, data) {
-        res.writeHead(200, {'Content-Type': 'text/html', 'Content-Length': data.length});
-        res.write(data);
-        res.end();
-    });
-});
-
 
 start();

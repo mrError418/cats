@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+body{
+  background-color:#FAFAFA;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +40,41 @@
     transform: rotate(360deg);
   }
 }
+
+header {
+  align-items: center;
+  height: 54px;
+  width: 100%;
+  border-bottom: 1px solid #DBDBDB;
+  background-color: white;
+  font-family: 'Lovers Quarrel', cursive;
+  font-size: 68px ;
+  color: black;
+  margin-bottom: 3%;
+
+
+}
+
+
+/**scroll bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #E8EAEC;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/**scroll bar end*/

@@ -1,0 +1,29 @@
+.Btns{
+    left: 39%;
+    top: 10px;
+}
+
+.LikeBtn{
+    background-color:  #4caf50;
+}
+.DisLikeBtn{
+    background-color:  #f44336;
+}
+
+.Btn{
+    font-size: 15px;
+    height: 44px;
+    padding: 0 32px;
+    border-radius: 2px;
+    margin: 6px 8px;
+    text-transform: uppercase;
+    transition: .3s;
+    border: 0px;
+    display: inline-block;
+    line-height: 41px;
+    font-weight: 500;
+}
+
+.Btn:hover{
+    cursor: pointer;
+}

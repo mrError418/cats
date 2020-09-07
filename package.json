@@ -4,8 +4,13 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "server": "node app.js",
+    "dev": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \" npm run server\"  \" npm run client\"",
+    "installserver": "npm install",
+    "installclient": "npm install --prefix client",
+    "servclientinstall": "concurrently \" npm run installserver\"  \" npm run installclient\""
   },
   "author": "",
   "license": "ISC",
